@@ -199,7 +199,7 @@ public class RegistroChamadoTest {
 //
 //    /**
 //     * Test of getTecnico method, of class RegistroChamado.
-//     *//
+//     */
 //    @Test
 //    public void testGetTecnico() {
 //        System.out.println("getTecnico");
