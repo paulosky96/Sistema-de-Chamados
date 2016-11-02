@@ -41,7 +41,7 @@ public class ClienteEmpresa extends Pessoa implements Serializable {
         this.cpf = cpf;
     }
 
-    public Empresa getEmpresa() {
+    public Empresa getEmpresa() {//
         return empresa;
     }
 
