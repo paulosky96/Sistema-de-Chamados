@@ -28,11 +28,6 @@ public class ClienteEmpresa_JUnit {
     }
     
     
-    
-    
-    
-    
-    
    
     @Test(expected = Exception.class)
     public void ClienteEmpresa_Constructor_Test1() throws Exception{
@@ -180,7 +175,7 @@ public class ClienteEmpresa_JUnit {
     
     
     @After
-    public void tearDown() {
+    public void remove() {
         cliente_empresa=null;
     }
 
