@@ -10,7 +10,7 @@
 <project name="Sistema_de_Chamados" default="default" basedir=".">
     <description>Builds, tests, and runs the project Sistema de Chamados.</description>
     
-    <property name="src.dir" value="src"/> 
+    
     
     
     <import file="Sistema de Chamados/nbproject/build-impl.xml"/>
