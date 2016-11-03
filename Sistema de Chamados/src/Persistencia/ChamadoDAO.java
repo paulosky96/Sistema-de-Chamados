@@ -44,6 +44,7 @@ public class ChamadoDAO {
     public void put(Chamado chamado) {
         chamado.setCodigo(gerarCodigo());
         cashChamado.put(chamado.getCodigo(), chamado);
+        
         persit();
     }
 
@@ -55,6 +56,7 @@ public class ChamadoDAO {
 
     public Chamado get(Integer codigoChamado) {
         return cashChamado.get(codigoChamado);
+        
     }
 
     private void load() {

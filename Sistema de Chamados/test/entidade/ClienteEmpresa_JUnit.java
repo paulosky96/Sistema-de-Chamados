@@ -28,6 +28,11 @@ public class ClienteEmpresa_JUnit {
     }
     
     
+    
+    
+    
+    
+    
    
     @Test(expected = Exception.class)
     public void ClienteEmpresa_Constructor_Test1() throws Exception{
@@ -70,8 +75,8 @@ public class ClienteEmpresa_JUnit {
     
     @Test
     public void TestGETCPF(){
-        assertEquals(cliente_empresa.getCpf(), 154238920);
-    }
+        assertEquals(cliente_empresa.getCpf(), 0);
+   }
     
     @Test
     public void TestSETCPF(){
@@ -175,7 +180,7 @@ public class ClienteEmpresa_JUnit {
     
     
     @After
-    public void remove() {
+    public void tearDown() {
         cliente_empresa=null;
     }
 
