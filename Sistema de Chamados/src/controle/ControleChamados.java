@@ -201,11 +201,11 @@ public class ControleChamados {
     public void alterarChamado() {
         this.telaAlteracaoChamado = new TelaRegistAcomp(this);
         telaAlteracaoChamado.setVisible(true);
-        telaAlteracaoChamado.setVisible(false);
+        
     }
 
     public void abrirRelatorio() {
-         new TelaRelatorioChamado(this).setVisible(false);
+         new TelaRelatorioChamado(this).setVisible(true);
          
         
     }

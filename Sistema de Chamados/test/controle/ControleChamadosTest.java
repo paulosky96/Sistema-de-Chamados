@@ -96,17 +96,18 @@ public class ControleChamadosTest {
     }
 
     
-//    @Test
-//    public void testCadastrarChamado() {
-//        controle_ch.cadastrarChamado();
-//        controle_ch.fecharTela();
-//    }
-//
-//    
-//    @Test
-//    public void testFecharTela() {
-//        controle_ch.fecharTela();
-//    }
+    @Test(expected = Exception.class)
+    public void testCadastrarChamado() {
+        controle_ch.cadastrarChamado();
+        
+    }
+
+    
+    @Test(expected = Exception.class)
+    public void testFecharTela() {
+        controle_ch.alterarChamado();
+        controle_ch.fecharTela();
+    }
 
     @Test
     public void testVoltaChamadoCodigo() {
@@ -201,24 +202,24 @@ public class ControleChamadosTest {
     }
 
     
-//    @Test
-//    public void testAlterarChamado_() {
-//        controle_ch.alterarChamado();
-//        controle_ch.fecharTela();
-//    }
+    @Test(timeout = 1)
+    public void testAlterarChamado_() {
+        controle_ch.alterarChamado();
+        controle_ch.fecharTela();
+    }
 
     
-    @Test
+    @Test(timeout = 1)
     public void testAbrirRelatorio() {
         controle_ch.abrirRelatorio();
     }
 
     
-//    @Test
-//    public void testFecharTelaAlteracao() {
-//        controle_ch.alterarChamado();
-//        controle_ch.fecharTela();
-//    }
+    @Test(timeout = 1)
+    public void testFecharTelaAlteracao() {
+        controle_ch.alterarChamado();
+        controle_ch.fecharTela();
+    }
 
     
     @Test

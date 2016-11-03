@@ -42,7 +42,7 @@ public class ClienteDAOTest {
         System.out.println(ce.getCpf());
     }
 
-    @Test 
+    @Test(expected = Exception.class)
     public void testValidarCPFNegativo() throws Exception {
         System.out.println("validarCPFNegativo");
         ce = new ClienteEmpresa(1, new Empresa(0, "empresa_Test"), -1234659871, "Test", 154238920); 

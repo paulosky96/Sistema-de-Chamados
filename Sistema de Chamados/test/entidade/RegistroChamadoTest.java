@@ -38,8 +38,8 @@ public class RegistroChamadoTest {
     }
 
     
-    @Test
-    public void Test_RegistroChamado_Contructor_1(){
+    @Test(expected = Exception.class)
+    public void Test_RegistroChamado_Contructor_1() throws  Exception{
         
         RegistroChamado test = new RegistroChamado(null, new Chamado(12345, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
                 new ClienteEmpresa(456, new Empresa(123456, "EmpresaTest"), 1234567, "Roberto", 456)
@@ -47,15 +47,15 @@ public class RegistroChamadoTest {
                 new Tecnico("Test", 1230));
     }
     
-    @Test
-    public void Test_RegistroChamado_Contructor_2(){
+    @Test(expected = Exception.class)
+    public void Test_RegistroChamado_Contructor_2() throws  Exception{
         
         RegistroChamado test = new RegistroChamado("Assunto", null ,
                 new Tecnico("Test", 1230));
     }
     
-    @Test
-    public void Test_RegistroChamado_Contructor_3(){
+    @Test(expected = Exception.class)
+    public void Test_RegistroChamado_Contructor_3() throws  Exception{
         
         RegistroChamado test = new RegistroChamado("Assunto", new Chamado(12345, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
                 new ClienteEmpresa(456, new Empresa(123456, "EmpresaTest"), 1234567, "Roberto", 456)
@@ -64,8 +64,8 @@ public class RegistroChamadoTest {
     }
     
     
-    @Test
-    public void Test_RegistroChamado_Contructor_4(){
+    @Test(expected = Exception.class)
+    public void Test_RegistroChamado_Contructor_4() throws  Exception{
         
         RegistroChamado test = new RegistroChamado(" ", new Chamado(12345, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
                 new ClienteEmpresa(456, new Empresa(123456, "EmpresaTest"), 1234567, "Roberto", 456)
@@ -90,7 +90,7 @@ public class RegistroChamadoTest {
         assertTrue(123==registro.getCodigo());
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void testSetCodigo_Negativo() throws Exception{
         registro.setCodigo(-12312);
         

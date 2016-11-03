@@ -55,25 +55,25 @@ public class TecnicoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void TestConstrutor_NomeComNumero() throws Exception{
         tecnico = new Tecnico("Robert0",123);
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void TestConstrutor_NomeComCaractereDiferente() throws Exception{
         tecnico = new Tecnico("Rober!0",123);
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void TestConstrutor_TelefoneNegativo() throws Exception{
         tecnico = new Tecnico("Roberto",-123);
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void TestConstrutor_NomeTecnicoVazio() throws Exception{
         tecnico = new Tecnico("",123);
         

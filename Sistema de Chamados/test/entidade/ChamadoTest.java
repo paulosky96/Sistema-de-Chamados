@@ -371,7 +371,7 @@ public class ChamadoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_1() throws Exception{
         
       Chamado teste =   new Chamado(12, null, "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -380,7 +380,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_2() throws Exception{
         
       Chamado teste =   new Chamado(12, "Teste", null, 1, new Tecnico("ASD", 12345), 
@@ -389,7 +389,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_3() throws Exception{
         
       Chamado teste =   new Chamado(-12, "Teste", "Objeto teste", -1, new Tecnico("ASD", 12345), 
@@ -398,7 +398,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_4() throws Exception{
         
       Chamado teste =   new Chamado(12, "Teste", "Objeto teste", 1, null, 
@@ -407,7 +407,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_5() throws Exception{
         
       Chamado teste =   new Chamado(12, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -416,7 +416,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_6() throws Exception{
         
       Chamado teste =   new Chamado(12, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -426,7 +426,7 @@ public class ChamadoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_7() throws Exception{
         
       Chamado teste =   new Chamado(12, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -435,7 +435,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_8() throws Exception{
         
       Chamado teste =   new Chamado(12, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -444,7 +444,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_9() throws Exception{
         
       Chamado teste =   new Chamado(12, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -453,7 +453,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_10() throws Exception{
         
       Chamado teste =  new Chamado(null,"Teste descricao",1,new Tecnico("TesteTecnico",123),new ClienteEmpresa(456,new Empresa
@@ -461,7 +461,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_11() throws Exception{
         
       Chamado teste =  new Chamado("Teste Titulo",null,1,new Tecnico("TesteTecnico",123),new ClienteEmpresa(456,new Empresa
@@ -469,7 +469,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_12() throws Exception{
         
       Chamado teste =  new Chamado("Teste Titulo","Teste descricao",-1,new Tecnico("TesteTecnico",123),new ClienteEmpresa(456,new Empresa
@@ -477,7 +477,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_13() throws Exception{
         
       Chamado teste =  new Chamado("Teste Titulo","Teste descricao",1,null,new ClienteEmpresa(456,new Empresa
@@ -485,7 +485,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_14() throws Exception{
         
       Chamado teste =  new Chamado("Teste Titulo","Teste descricao",1,new Tecnico("TesteTecnico",123),null,"Windows","7","Oracle");
@@ -493,7 +493,7 @@ public class ChamadoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_15() throws Exception{
         
       Chamado teste =  new Chamado("Teste Titulo","Teste descricao",1,new Tecnico("TesteTecnico",123),new ClienteEmpresa(456,new Empresa
@@ -502,7 +502,7 @@ public class ChamadoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_16() throws Exception{
         
       Chamado teste =  new Chamado("Teste Titulo","Teste descricao",1,new Tecnico("TesteTecnico",123),new ClienteEmpresa(456,new Empresa
@@ -511,7 +511,7 @@ public class ChamadoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_17() throws Exception{
         
       Chamado teste =  new Chamado("Teste Titulo","Teste descricao",1,new Tecnico("TesteTecnico",123),new ClienteEmpresa(456,new Empresa
@@ -519,7 +519,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_18() throws Exception{
         
       Chamado teste =  new Chamado(null,"descricao teste",2,new Tecnico("teste",456), new ClienteEmpresa(456,new Empresa
@@ -527,7 +527,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_19() throws Exception{
         
       Chamado teste =  new Chamado("Teste titulo",null,2,new Tecnico("teste",456), new ClienteEmpresa(456,new Empresa
@@ -535,7 +535,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_20() throws Exception{
         
       Chamado teste =  new Chamado("Teste titulo","descricao teste",-2,new Tecnico("teste",456), new ClienteEmpresa(456,new Empresa
@@ -544,7 +544,7 @@ public class ChamadoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_21() throws Exception{
         
       Chamado teste =  new Chamado("Teste titulo","descricao teste",2,null, new ClienteEmpresa(456,new Empresa
@@ -553,7 +553,7 @@ public class ChamadoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_22() throws Exception{
         
       Chamado teste =  new Chamado("Teste titulo","descricao teste",2,new Tecnico("teste",456), null, "LINUX","8","MYSQL", 12.01);
@@ -561,7 +561,7 @@ public class ChamadoTest {
     }
     
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_23() throws Exception{
         
       Chamado teste =  new Chamado("Teste titulo","descricao teste",2,new Tecnico("teste",456), new ClienteEmpresa(456,new Empresa
@@ -569,7 +569,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_24() throws Exception{
         
       Chamado teste =  new Chamado("Teste titulo","descricao teste",2,new Tecnico("teste",456), new ClienteEmpresa(456,new Empresa
@@ -577,7 +577,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_25() throws Exception{
         
       Chamado teste =  new Chamado("Teste titulo","descricao teste",2,new Tecnico("teste",456), new ClienteEmpresa(456,new Empresa
@@ -585,7 +585,7 @@ public class ChamadoTest {
         
     }
     
-    @Test
+    @Test(expected = Exception.class)
     public void Test_Contrutor_26() throws Exception{
         
       Chamado teste =  new Chamado("Teste titulo","descricao teste",2,new Tecnico("teste",456), new ClienteEmpresa(456,new Empresa
