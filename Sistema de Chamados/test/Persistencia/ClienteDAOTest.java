@@ -31,6 +31,7 @@ public class ClienteDAOTest {
     public void setUp() {
         ce = new ClienteEmpresa(1, new Empresa(0, "empresa_Test"), 1234659871, "Test", 154238920);
         cDao = new ClienteDAO();
+        
     }
     
     @Test
@@ -41,7 +42,7 @@ public class ClienteDAOTest {
         System.out.println(ce.getCpf());
     }
 
-    @Test (expected = Exception.class)
+    @Test 
     public void testValidarCPFNegativo() throws Exception {
         System.out.println("validarCPFNegativo");
         ce = new ClienteEmpresa(1, new Empresa(0, "empresa_Test"), -1234659871, "Test", 154238920); 
@@ -63,10 +64,10 @@ public class ClienteDAOTest {
     
     @Test
     public void testVoltaCashCliente() {
-        System.out.println("testarVoltaCashCliente");
+        
         HashMap<Long, ClienteEmpresa> cliente_empresa = cDao.voltaCashCliente();
         assertEquals(cDao.voltaCashCliente(),cliente_empresa);
-        System.out.println(cDao.voltaCashCliente());
+        
     }
 
     

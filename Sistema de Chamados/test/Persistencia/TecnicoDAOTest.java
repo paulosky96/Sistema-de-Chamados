@@ -57,7 +57,7 @@ public class TecnicoDAOTest {
    
     @Test
     public void testGet() {
-        assertEquals(tDao.get(Integer.SIZE), null);
+        assertEquals(tDao.get(30142098), null);
     }
 
     

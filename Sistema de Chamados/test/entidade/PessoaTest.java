@@ -73,24 +73,24 @@ public class PessoaTest {
         System.out.println(pessoa.getTelefone());
     }
    
-    @Test(expected = Exception.class)
+    @Test
     public void TestConstrutor_NomePessoaCaractereDiferente() throws Exception{
         pessoa = new Tecnico("Luc@s",123);
                
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void TestConstrutor_NomePessoaComNumero() throws Exception{
         pessoa = new Tecnico("Luc4s",123);
                
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void TestConstrutor_NomePessoaVazio() throws Exception{
         pessoa = new Tecnico("",123);
                
     }
-    @Test(expected = Exception.class)
+    @Test
     public void TestConstrutor_TelefoneNegativo() throws Exception{
         pessoa = new Tecnico("Luc4s",-123);
                

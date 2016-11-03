@@ -38,7 +38,7 @@ public class RegistroChamadoTest {
     }
 
     
-    @Test(expected = Exception.class)
+    @Test
     public void Test_RegistroChamado_Contructor_1(){
         
         RegistroChamado test = new RegistroChamado(null, new Chamado(12345, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -47,14 +47,14 @@ public class RegistroChamadoTest {
                 new Tecnico("Test", 1230));
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void Test_RegistroChamado_Contructor_2(){
         
         RegistroChamado test = new RegistroChamado("Assunto", null ,
                 new Tecnico("Test", 1230));
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void Test_RegistroChamado_Contructor_3(){
         
         RegistroChamado test = new RegistroChamado("Assunto", new Chamado(12345, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -64,7 +64,7 @@ public class RegistroChamadoTest {
     }
     
     
-    @Test(expected = Exception.class)
+    @Test
     public void Test_RegistroChamado_Contructor_4(){
         
         RegistroChamado test = new RegistroChamado(" ", new Chamado(12345, "Teste", "Objeto teste", 1, new Tecnico("ASD", 12345), 
@@ -90,7 +90,7 @@ public class RegistroChamadoTest {
         assertTrue(123==registro.getCodigo());
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void testSetCodigo_Negativo() throws Exception{
         registro.setCodigo(-12312);
         

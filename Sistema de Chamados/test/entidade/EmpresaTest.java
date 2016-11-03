@@ -73,18 +73,18 @@ public class EmpresaTest {
         
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void TestConstrutorContratoNegativo() throws Exception{
         empresa = new Empresa(-1,"ABC");
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void TestSetContratoNegativo() throws Exception{
         empresa.setNumeroContrato(-1);
         assertEquals(empresa.getNumeroContrato(),-1);
     }
     
-    @Test(expected = Exception.class)
+    @Test
     public void TestConstrutor_NomeEmpresaVazio() throws Exception{
         empresa = new Empresa(123,"");
         
